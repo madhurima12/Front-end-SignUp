@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div class="sign-up-form">
+    <form name="Sign_up" class="form" onsubmit="return validateform()">
+    <!--form validation occurs without satisfying which you cannot press the sign up button -->
+            
+            <h1>SIGN UP</h1>
+            <p style="font-size:30px;">Create your account</p>
+            <p style="font-size:12px;">Lorem ipsum dolor sit arnet consectetur adipiscing elit</p>
+            <a href='https://www.accounts.google.com'>
+            <button type="submit"  class="social-google">Sign up with Google</button>
+            </a>
+            <a href='https://www.facebook.com'>
+            <button type="submit"  class="social facebook">Sign up with Facebook</button>
+            </a>
+            <hr>
+            <p class="or">or</p>
+            <input type="text" id="firstname" class="input-box" placeholder="First Name"/><br>
+            <input type="text" id="lastname" class="input-box" placeholder="Last Name"/><br>
+            <input type="email" id="emailaddress" class="input-box" placeholder="EmailAddress"/><br>
+            <label>
+            <input type="password" id="password" class="input-box" placeholder="Password"/><br>
+            <i class="show fa fa-eye" id="togglePassword"></i>
+            </label>
+            <p style="font-size:10px;">By clicking Sign Up,you agree to our <a href="#">Terms of Use</a> and our <a href="#"> Privacy Policy</a></p>
+
+            <input type="submit" onclick="window.location.href='https:regres.in';" class="signup-button" value="SIGN UP"/><br>
+            
+            <!--onclick reference just used for checking,removing which validation works fine-->
+            
+    </div>
+</form>
+</body>
+</html>
